@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo para imposto Simples Nacional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cálculo para imposto de empresas cadastradas no Simples Nacional</h1>
+    <p>Olá, microempreendedor</p>
+    <p>Não é difícil enxergar os grandes desafios de empreender, o mais dificil é passar por eles, há tantas tarefas que é necessario se desdobrar em muitas tarefas para se obter um plano de negocios eficiente.</p>
+    <p>Por isso, criei esta ferramenta gratuíta para auxiliar na prévia contábil dos impostos de seu CNPJ</p>
+    <section>
+        <div>
+             Simples nacional se enquadra apenas valores entre R$80.000,00 até R$4.800.000,00 - insira um faturamento anual dentro destes valores permitidos. <br><br>
+            Faturamento anual:
+            <input type="number" name="ffat" id="ffat" placeholder="365000"> <br> <br>
+            Faturamento mês atual:
+            <input type="number" name="fmes" id="fmes" placeholder="25000">
+            <input type="button" value="calcular" onclick="calcular()">
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    <p>Lembre-se, empresas do simples nacional tem a obrigação de declarar mensalmente a sua receita, pelo portal da receita federal, e essa ferramente fará a prévia dos calculos baseando nas mesmas regras usadas pela receita.</p>
+    <p>Seu faturamento anual é usada no calculo, quanto maior a declaração, maior as porcentagem para pagamento.</p>
+    <script src="script.js"></script>
+</body>
+</html>
